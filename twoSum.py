@@ -1,3 +1,4 @@
+#https://leetcode.com/problems/two-sum/
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         # Create a dictionary to store the number and its index
@@ -13,7 +14,7 @@ class Solution:
                 # If it exists, return the indices of the complement and the current number
                 return [num_to_index[complement], index]
             
-            # If the complement does not exist, add the current number and its index to the dictionary
+            # If the compliment does not exist, add the current number and its index to the dictionary
             num_to_index[num] = index
         
         # Return an empty list if no solution is found (though the problem guarantees one solution)
