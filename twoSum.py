@@ -1,21 +1,21 @@
 #https://leetcode.com/problems/two-sum/
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # Create a dictionary to store the number and its index
+        # Step 1: Create a dictionary to store the number and its index
         num_to_index = {}
         
-        # Iterate through the list of numbers
+        # Step 2: Iterate through the list of numbers with their indices
         for index, num in enumerate(nums):
-            # Calculate the complement of the current number
+            # Step 3: Calculate the complement of the current number
             complement = target - num
             
-            # Check if the complement exists in the dictionary
+            # Step 4: Check if the complement exists in the dictionary
             if complement in num_to_index:
-                # If it exists, return the indices of the complement and the current number
+                # Step 5: If it exists, return the indices of the complement and the current number
                 return [num_to_index[complement], index]
             
-            # If the compliment does not exist, add the current number and its index to the dictionary
+            # Step 6: If the complement does not exist, add the current number and its index to the dictionary
             num_to_index[num] = index
         
-        # Return an empty list if no solution is found (though the problem guarantees one solution)
+        # Step 7: Return an empty list if no solution is found (though the problem guarantees one solution)
         return []
