@@ -1,1 +1,1 @@
-# Leetcodes
+# Leetcode Suffering
