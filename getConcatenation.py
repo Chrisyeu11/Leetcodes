@@ -7,3 +7,7 @@ class Solution:
             for n in nums:
                 ans.append(n)
         return ans
+#or 
+#class Solution:
+#    def getConcatenation(self, nums: List[int]) -> List[int]:
+#        return nums + nums
